@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const TeamSection: React.FC = () => {
   return (
     <>
-      <div className="max-w-7xl w-[550] sm:w-full mx-auto px-10 md:px-6 py-12">
+      <div className="max-w-7xl w-full sm:w-full mx-auto px-10 md:px-6 py-12">
         {/* Team Section */}
         <div className="text-center mb-12">
           <h2 className="text-sm md:text-2xl font-medium text-[#433F3E] flex flex-col gap-2 items-center font-Montserrat">

@@ -137,7 +137,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="sm:w-full w-[550] mt-20">
+    <div className="sm:w-full w-full mt-20">
       <h2 className="text-3xl sm:text-[44px] my-10 font-Inter font-semibold text-black text-center mt-12">
         Our Projects
       </h2>
@@ -183,7 +183,7 @@ export default Projects;
 
 const ProjectCard = ({ project }: any) => {
   return (
-    <div className="w-[250px] sm:w-[350px] min-w-[250px] sm:min-w-[350px] rounded-xl overflow-hidden shadow-lg bg-white">
+    <div className="w-[350px] sm:w-[350px] min-w-[250px] sm:min-w-[350px] rounded-xl overflow-hidden shadow-lg bg-white">
       <img
         src={project.image?.src}
         alt={project.title}

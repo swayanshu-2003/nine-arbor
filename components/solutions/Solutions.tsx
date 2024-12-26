@@ -47,7 +47,7 @@ const cardItems = [
 
 const Solutions = () => {
   return (
-    <div className="my-14 px-8 sm:px-0 w-[550] sm:w-full max-w-7xl mx-auto">
+    <div className="my-14 px-8 sm:px-0 w-full sm:w-full max-w-7xl mx-auto">
       <div className="flex flex-col items-center space-y-0">
         {cardItems.map((item: any, index: any) => (
           <div

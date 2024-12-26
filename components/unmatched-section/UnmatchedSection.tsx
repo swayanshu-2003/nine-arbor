@@ -38,8 +38,8 @@ const accordionItems = [
 
 const UnmatchedSection = () => {
   return (
-    <div className="sm:w-full w-[550] bg-gray-100">
-      <div className="py-12   bg-gray-100 max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
+    <div className="sm:w-full w-full bg-gray-100">
+      <div className="py-12   bg-gray-100 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-16">
           {/* Left Section */}
           <div className="space-y-4 w-full ml-10  sm:ml-0 lg:w-2/5">
@@ -47,10 +47,10 @@ const UnmatchedSection = () => {
               <span>Unmatched</span>
               <span className="w-12 sm:w-16 h-0.5 bg-black rounded-full"></span>
             </h4>
-            <h2 className="text-2xl flex sm:flex-col gap-1 sm:gap-2 sm:text-3xl md:text-[44px] font-bold font-Inter ">
-              What makes <br />
+            <h2 className="text-2xl flex flex-col gap-1 sm:gap-2 sm:text-3xl md:text-[44px] font-bold font-Inter ">
+              <span className="w-fit">What makes</span> <br className="hidden md:inline-block"/>
               <span className="text-gray-600">our buildings</span>
-              <br/> <span className="sm:-mt-10">stand out</span>
+              <br className="hidden md:inline-block"/> <span className="sm:-mt-10">stand out</span>
             </h2>
           </div>
 

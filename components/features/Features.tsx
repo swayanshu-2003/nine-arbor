@@ -5,9 +5,9 @@ import Logo from "@/assets/logo.png";
 const FeaturesSection = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 py-12 bg-white  ">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative sm:max-w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6 relative sm:max-w-full max-w-7xl mx-auto">
         {/* Main Feature Card */}
-        <div className="lg:col-span-2 w-[450] sm:w-full ml-8 sm:ml-0 bg-black text-white rounded-lg relative overflow-hidden aspect-square">
+        <div className="lg:col-span-2 w-full max-w-full sm:w-full md:ml-8 sm:ml-0 bg-black text-white rounded-lg relative overflow-hidden aspect-square">
           {/* Background Image */}
           <img
             src={FeaturesBg?.src}
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
 
         {/* Secondary Cards */}
         <div className="col-span-1  flex flex-col gap-6">
-          <div className="bg-white border shadow flex flex-col gap-4 w-[450] sm:w-full ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 text-center aspect-square">
+          <div className="bg-white border shadow flex flex-col gap-4 w-full sm:w-full md:ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 text-center aspect-square">
             <h3 className="text-2xl sm:text-3xl font-bold font-Inter">
               TECH DRIVEN
             </h3>
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
               Live updates and real-time monitoring of project enabled by tech
             </p>
           </div>
-          <div className="bg-white border shadow flex flex-col w-[450] sm:w-full ml-8 sm:ml-0 gap-4 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
+          <div className="bg-white border shadow flex flex-col w-full sm:w-full md:ml-8 sm:ml-0 gap-4 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
             <h3 className="text-2xl sm:text-3xl font-bold font-Inter">
               BUYERS AS PROMOTER
             </h3>
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="col-span-1 bg-white border shadow flex flex-col gap-4 w-[450] sm:w-full ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
+        <div className="col-span-1 bg-white border shadow flex flex-col gap-4 w-full sm:w-full md:ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
           <h3 className="text-2xl sm:text-3xl font-bold font-Inter">
             (COST+MARGIN) PRICING MODEL
           </h3>
@@ -58,7 +58,7 @@ const FeaturesSection = () => {
             Transparent open book pricing ensuring fair price for buyers
           </p>
         </div>
-        <div className="col-span-1 bg-white border shadow flex flex-col gap-4 w-[450] sm:w-full ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
+        <div className="col-span-1 bg-white border shadow flex flex-col gap-4 w-full sm:w-full md:ml-8 sm:ml-0 sm:gap-6 items-center justify-center rounded-lg p-6 sm:p-10 text-center aspect-square">
           <h3 className="text-2xl sm:text-3xl font-bold font-Inter">
             ESCROW SYSTEM
           </h3>
@@ -69,7 +69,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Call to Action Card */}
-        <div className="bg-black text-white rounded-lg p-6 w-[450] sm:w-full ml-8 sm:ml-0 text-center flex flex-col gap-4 sm:gap-6 items-center justify-center">
+        <div className="bg-black text-white rounded-lg p-6 w-full sm:w-full md:ml-8 sm:ml-0 text-center flex flex-col gap-4 sm:gap-6 items-center justify-center">
           <div className="w-40 sm:w-60">
             <img src={Logo?.src} alt="Logo" className="w-full" />
           </div>
