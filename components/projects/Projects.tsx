@@ -98,13 +98,21 @@ const projectData = [
 ];
 
 const Projects = () => {
-  const scrollContainerRef:any = useRef(null);
-  const [clonedData, setClonedData] = useState<any>([...projectData, ...projectData]);
 
-  const scroll = (direction:any) => {
+  const scrollContainerRef: any = useRef(null);
+  const [clonedData, setClonedData] = useState<any>([
+    ...projectData,
+    ...projectData,
+  ]);
+
+  const scroll = (direction: any) => {
     if (scrollContainerRef.current) {
       const scrollAmount = direction === "left" ? -300 : 300;
-      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      scrollContainerRef.current.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+
     }
   };
 
@@ -137,20 +145,64 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="sm:w-full w-full mt-20">
-      <h2 className="text-3xl sm:text-[44px] my-10 font-Inter font-semibold text-black text-center mt-12">
+
+    // <div className=" my-20  max-w-7xl mx-auto">
+    //   <h2 className="text-[44px] my-10 font-Inter font-bold text-black text-center mt-12">
+    //     Our Projects
+    //   </h2>
+    //   <div className="relative w-full max-w-[1500px] mx-auto ">
+    //     {/* Left fade */}
+    //     <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+
+    //     {/* Right fade */}
+    //     <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
+
+    //     {/* Left Scroll Button */}
+    //     <button
+    //       className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-2 rounded-full shadow-md"
+    //       onClick={() => scroll("left")}
+    //     >
+    //       &lt;
+    //     </button>
+
+    //     {/* Right Scroll Button */}
+    //     <button
+    //       className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-2 rounded-full shadow-md"
+    //       onClick={() => scroll("right")}
+    //     >
+    //       &gt;
+    //     </button>
+
+    //     {/* Scrollable Content */}
+    //     <div
+    //       className="flex items-center gap-4 overflow-x-scroll hide-scrollbar"
+    //       ref={scrollContainerRef}
+    //       onScroll={handleScroll}
+    //     >
+    //       {clonedData.map((project: any, index: any) => (
+    //         <ProjectCard key={`${project.id}-${index}`} project={project} />
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="my-20 max-w-7xl mx-auto">
+      <h2 className="text-2xl md:text-[44px] my-10 font-Inter font-bold text-black text-center mt-12">
+
         Our Projects
       </h2>
       <div className="relative w-full max-w-[1500px] mx-auto">
         {/* Left fade */}
-        <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+
+        <div className="absolute left-0 top-0 h-full w-6 md:w-12 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
 
         {/* Right fade */}
-        <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 h-full w-6 md:w-12 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
 
         {/* Left Scroll Button */}
         <button
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-2 rounded-full shadow-md"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-1 md:p-2 rounded-full shadow-md"
+
           onClick={() => scroll("left")}
         >
           &lt;
@@ -158,7 +210,9 @@ const Projects = () => {
 
         {/* Right Scroll Button */}
         <button
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-2 rounded-full shadow-md"
+
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-1 md:p-2 rounded-full shadow-md"
+
           onClick={() => scroll("right")}
         >
           &gt;
@@ -183,19 +237,64 @@ export default Projects;
 
 const ProjectCard = ({ project }: any) => {
   return (
-    <div className="w-[350px] sm:w-[350px] min-w-[250px] sm:min-w-[350px] rounded-xl overflow-hidden shadow-lg bg-white">
+
+    // <div className="min-w-[400px] my-4 rounded-xl overflow-hidden shadow-lg bg-white">
+    //   <img
+    //     src={project.image?.src}
+    //     alt={project.title}
+    //     className="w-full h-48 object-cover"
+    //   />
+    //   <div className="p-4">
+    //     <h3 className="text-3xl font-Inter font-semibold text-gray-800">
+    //       {project.title}
+    //     </h3>
+    //     <div className="grid grid-cols-4 items-center justify-center text-sm text-black mt-7">
+    //       <div className="col-span-2 border-black border-r-2 rounded-8 flex flex-col items-center font-Lato">
+    //         <p className="text-base font-semibold">{project.description}</p>
+    //         <p className="text-xs font-light">{project.type}</p>
+    //       </div>
+    //       <div className="col-span-1 text-right border-black border-r-2 rounded-8 flex flex-col items-center font-Lato">
+    //         <p className="text-base">{project.price}</p>
+    //         <p className="text-xs font-light">Onwards</p>
+    //       </div>
+    //       <div className="col-span-1 flex flex-col items-center font-Lato">
+    //         <p className="text-base">{project.units}</p>
+    //         <p className="text-xs font-light">Units</p>
+    //       </div>
+    //     </div>
+    //     <div className="flex items-start gap-2 mt-4 text-black font-Lato w-full">
+    //       <div className="flex items-start gap-2 max-w-[60%] truncate overflow-hidden ">
+    //         <MapPin className="w-5 h-5 mt-0.5" />
+    //         <div className="max-w-[87%]">
+    //           <p className="font-semibold text-base">{project.location.name}</p>
+    //           <p className="text-xs text-gray-600 max-w-full overflow-hidden truncate">
+    //             {project.location.address}
+    //           </p>
+    //         </div>
+    //       </div>
+    //       <button className="w-32 bg-black text-white text-sm py-2 hover:bg-gray-800 transition flex items-center justify-center gap-1">
+    //         View Project <ArrowRight size={15} className="text-xs" />
+    //       </button>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="min-w-[250px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] my-4 rounded-xl overflow-hidden shadow-lg bg-white">
       <img
         src={project.image?.src}
         alt={project.title}
-        className="w-full h-40 sm:h-48 object-cover"
+        className="w-full h-32 sm:h-40 md:h-48 object-cover"
       />
       <div className="p-4">
-        <h3 className="text-xl sm:text-3xl font-Inter font-semibold text-gray-800">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-Inter font-semibold text-gray-800">
           {project.title}
         </h3>
-        <div className="grid grid-cols-4 items-center justify-center text-sm text-black mt-7">
+        <div className="grid grid-cols-4 items-center justify-center text-sm text-black mt-7 gap-2">
           <div className="col-span-2 border-black border-r-2 rounded-8 flex flex-col items-center font-Lato">
-            <p className="text-sm sm:text-base font-semibold">{project.description}</p>
+            <p className="text-sm sm:text-base font-semibold">
+              {project.description}
+            </p>
+
             <p className="text-xs font-light">{project.type}</p>
           </div>
           <div className="col-span-1 text-right border-black border-r-2 rounded-8 flex flex-col items-center font-Lato">
@@ -209,16 +308,20 @@ const ProjectCard = ({ project }: any) => {
         </div>
         <div className="flex items-start gap-2 mt-4 text-black font-Lato w-full">
           <div className="flex items-start gap-2 max-w-[60%] truncate overflow-hidden">
-            <MapPin className="w-4 sm:w-5 h-4 sm:h-5 mt-0.5" />
+            <MapPin className="w-5 h-5 mt-0.5" />
             <div className="max-w-[87%]">
-              <p className="font-semibold text-sm sm:text-base">{project.location.name}</p>
-              <p className="text-xs sm:text-sm text-gray-600 max-w-full overflow-hidden truncate">
+              <p className="font-semibold text-sm sm:text-base">
+                {project.location.name}
+              </p>
+              <p className="text-xs text-gray-600 max-w-full overflow-hidden truncate">
+
                 {project.location.address}
               </p>
             </div>
           </div>
-          <button className="w-28 sm:w-32 bg-black text-white text-xs sm:text-sm py-1 sm:py-2 hover:bg-gray-800 transition flex items-center justify-center gap-1">
-            View Project <ArrowRight  size={15} className="text-xs" />
+
+          <button className="w-24 sm:w-32 bg-black text-white text-xs sm:text-sm py-2 hover:bg-gray-800 transition flex items-center justify-center gap-1">
+            View Project <ArrowRight size={15} className="text-xs" />
           </button>
         </div>
       </div>

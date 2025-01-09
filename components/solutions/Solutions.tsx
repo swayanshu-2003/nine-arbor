@@ -47,33 +47,60 @@ const cardItems = [
 
 const Solutions = () => {
   return (
-    <div className="my-14 px-8 sm:px-0 w-full sm:w-full max-w-7xl mx-auto">
-      <div className="flex flex-col items-center space-y-0">
+
+    // <div className=" my-14  max-w-7xl mx-auto">
+    //   <div className="flex flex-col items-center ">
+    //     {cardItems.map((item: any, index: any) => (
+    //       <div
+    //         key={item?.id}
+    //         className={`flex ${
+    //           index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+    //         } bg-[#EFF1F2] w-full items-center justify-center`}
+    //       >
+    //         <div className="w-1/2 ">
+    //           <img src={item?.image?.src} alt="" />
+    //         </div>
+    //         <div className="p-12 w-1/2">
+    //           <p className="text-lg font-normal font-Montserrat text-[#707378]">
+    //             {item.category}
+    //           </p>
+    //           <h3 className="text-[44px] font-Inter font-bold text-black leading-[57px] mt-2">
+    //             {item.title}
+    //           </h3>
+    //           <p className="text-black font-Lato text-2xl font-normal mt-2">
+    //             {item.description}
+    //           </p>
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+
+    <div className="my-14 max-w-7xl mx-auto">
+      <div className="flex flex-col items-center ">
         {cardItems.map((item: any, index: any) => (
           <div
             key={item?.id}
-            className={`flex flex-col md:flex-row ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            className={`flex flex-col-reverse lg:flex-row ${
+              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             } bg-[#EFF1F2] w-full items-center justify-center`}
           >
-            {/* Image Section */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <img
                 src={item?.image?.src}
-                alt={item?.title}
-                className="w-full h-auto"
+                alt=""
+                className="w-full object-cover"
               />
             </div>
-
-            {/* Text Section */}
-            <div className="p-6 md:p-12 w-full md:w-1/2">
-              <p className="text-base md:text-lg font-normal font-Montserrat text-[#707378]">
+            <div className="p-6 lg:p-12 w-full lg:w-1/2 text-center lg:text-left">
+              <p className="text-base lg:text-lg font-normal font-Montserrat text-[#707378]">
                 {item.category}
               </p>
-              <h3 className="text-2xl md:text-[44px] font-Inter font-bold text-black leading-[32px] md:leading-[57px] mt-2">
+              <h3 className="text-2xl lg:text-[44px] font-Inter font-bold text-black leading-tight lg:leading-[57px] mt-2">
                 {item.title}
               </h3>
-              <p className="text-sm md:text-2xl font-Lato font-normal mt-2 text-black">
+              <p className="text-black font-Lato text-base lg:text-2xl font-normal mt-2">
+
                 {item.description}
               </p>
             </div>
