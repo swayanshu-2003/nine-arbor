@@ -1,5 +1,6 @@
 import React from "react";
 import { FiTwitter } from "react-icons/fi";
+
 import { MdMailOutline } from "react-icons/md";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 
@@ -303,6 +304,7 @@ const TeamSection: React.FC = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

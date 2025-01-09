@@ -98,6 +98,7 @@ const projectData = [
 ];
 
 const Projects = () => {
+
   const scrollContainerRef: any = useRef(null);
   const [clonedData, setClonedData] = useState<any>([
     ...projectData,
@@ -111,6 +112,7 @@ const Projects = () => {
         left: scrollAmount,
         behavior: "smooth",
       });
+
     }
   };
 
@@ -143,6 +145,7 @@ const Projects = () => {
   }, []);
 
   return (
+
     // <div className=" my-20  max-w-7xl mx-auto">
     //   <h2 className="text-[44px] my-10 font-Inter font-bold text-black text-center mt-12">
     //     Our Projects
@@ -185,10 +188,12 @@ const Projects = () => {
 
     <div className="my-20 max-w-7xl mx-auto">
       <h2 className="text-2xl md:text-[44px] my-10 font-Inter font-bold text-black text-center mt-12">
+
         Our Projects
       </h2>
       <div className="relative w-full max-w-[1500px] mx-auto">
         {/* Left fade */}
+
         <div className="absolute left-0 top-0 h-full w-6 md:w-12 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
 
         {/* Right fade */}
@@ -197,6 +202,7 @@ const Projects = () => {
         {/* Left Scroll Button */}
         <button
           className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-1 md:p-2 rounded-full shadow-md"
+
           onClick={() => scroll("left")}
         >
           &lt;
@@ -204,7 +210,9 @@ const Projects = () => {
 
         {/* Right Scroll Button */}
         <button
+
           className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-black text-white p-1 md:p-2 rounded-full shadow-md"
+
           onClick={() => scroll("right")}
         >
           &gt;
@@ -229,6 +237,7 @@ export default Projects;
 
 const ProjectCard = ({ project }: any) => {
   return (
+
     // <div className="min-w-[400px] my-4 rounded-xl overflow-hidden shadow-lg bg-white">
     //   <img
     //     src={project.image?.src}
@@ -285,6 +294,7 @@ const ProjectCard = ({ project }: any) => {
             <p className="text-sm sm:text-base font-semibold">
               {project.description}
             </p>
+
             <p className="text-xs font-light">{project.type}</p>
           </div>
           <div className="col-span-1 text-right border-black border-r-2 rounded-8 flex flex-col items-center font-Lato">
@@ -304,10 +314,12 @@ const ProjectCard = ({ project }: any) => {
                 {project.location.name}
               </p>
               <p className="text-xs text-gray-600 max-w-full overflow-hidden truncate">
+
                 {project.location.address}
               </p>
             </div>
           </div>
+
           <button className="w-24 sm:w-32 bg-black text-white text-xs sm:text-sm py-2 hover:bg-gray-800 transition flex items-center justify-center gap-1">
             View Project <ArrowRight size={15} className="text-xs" />
           </button>

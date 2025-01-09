@@ -47,6 +47,7 @@ const cardItems = [
 
 const Solutions = () => {
   return (
+
     // <div className=" my-14  max-w-7xl mx-auto">
     //   <div className="flex flex-col items-center ">
     //     {cardItems.map((item: any, index: any) => (
@@ -99,6 +100,7 @@ const Solutions = () => {
                 {item.title}
               </h3>
               <p className="text-black font-Lato text-base lg:text-2xl font-normal mt-2">
+
                 {item.description}
               </p>
             </div>
