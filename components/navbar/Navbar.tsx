@@ -11,25 +11,46 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black text-white px-6 py-3 w-full sm:w-full ">
+    <nav className="bg-black text-white px-6 py-3 w-full sm:w-full sticky top-0 left-0 z-[70]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="w-32 sm:w-40">
-          <img src={Logo?.src} alt="Logo" />
+          <a href="/">
+            <img src={Logo?.src} alt="Logo" />
+          </a>
         </div>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-4 lg:space-x-6 font-Montserrat text-sm sm:text-base">
-          <li className="hover:text-gray-400 cursor-pointer">Home</li>
-          <li className="hover:text-gray-400 cursor-pointer">Products</li>
-          <li className="hover:text-gray-400 cursor-pointer">About</li>
-          <li className="hover:text-gray-400 cursor-pointer">Career</li>
-          <li className="hover:text-gray-400 cursor-pointer">Contact</li>
-          <li className="hover:text-gray-400 cursor-pointer">Blog</li>
+          <a href="/">
+            <li className="font-normal hover:font-bold cursor-pointer transition-all duration-200 px-2">
+              Home
+            </li>
+          </a>
+          <a href="#about">
+            <li className="font-normal hover:font-bold cursor-pointer transition-all duration-200 px-2">
+              About
+            </li>
+          </a>
+          <a href="#features">
+            <li className="font-normal hover:font-bold cursor-pointer transition-all duration-200 px-2">
+              Features
+            </li>
+          </a>
+          <a href="#projects">
+            <li className="font-normal hover:font-bold cursor-pointer transition-all duration-200 px-2">
+              Projects
+            </li>
+          </a>
+          <a href="#team">
+            <li className="font-normal hover:font-bold cursor-pointer transition-all duration-200 px-2">
+              Team
+            </li>
+          </a>
         </ul>
 
         {/* Desktop Button */}
-        <button className="hidden sm:block border border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-xs sm:text-sm">
+        <button className="hidden sm:block border rounded-sm border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-xs sm:text-sm">
           Talk to Us
         </button>
 
