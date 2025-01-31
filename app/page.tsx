@@ -1,3 +1,4 @@
+"use client";
 import Contact from "@/components/contact/Contact";
 import FeaturesSection from "@/components/features/Features";
 import Footer from "@/components/footer/Footer";
@@ -18,7 +19,7 @@ export default function Home() {
       <Solutions />
       <Projects />
       <TeamSection />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

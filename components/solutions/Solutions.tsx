@@ -1,9 +1,9 @@
 import React from "react";
-import Solution1 from "@/assets/solutions/solution1.png";
-import Solution2 from "@/assets/solutions/solution2.png";
-import Solution3 from "@/assets/solutions/solution3.png";
-import Solution4 from "@/assets/solutions/solution4.png";
-import Solution5 from "@/assets/solutions/solution5.png";
+import Solution1 from "@/assets/solutions/solution1.svg";
+import Solution2 from "@/assets/solutions/solution2.svg";
+import Solution3 from "@/assets/solutions/solution3.svg";
+import Solution4 from "@/assets/solutions/solution4.svg";
+import Solution5 from "@/assets/solutions/solution5.svg";
 
 const cardItems = [
   {
