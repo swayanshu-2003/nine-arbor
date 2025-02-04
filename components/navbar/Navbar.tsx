@@ -50,9 +50,12 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Button */}
-        <button className="hidden sm:block border rounded-sm border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-xs sm:text-sm">
+        <a
+          href="https://wa.me/7007828937"
+          className="hidden sm:block border rounded-sm border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-xs sm:text-sm"
+        >
           Talk to Us
-        </button>
+        </a>
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden flex items-center">
@@ -107,9 +110,12 @@ const Navbar = () => {
             <li className="hover:text-gray-400 cursor-pointer">Blog</li>
           </ul>
           <div className="px-6 pb-4">
-            <button className="w-full border border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-sm">
+            <a
+              href="https://wa.me/7007828937"
+              className="w-full border border-white py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-sm"
+            >
               Talk to Us
-            </button>
+            </a>
           </div>
         </div>
       )}

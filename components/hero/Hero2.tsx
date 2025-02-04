@@ -69,9 +69,10 @@ const Hero = () => {
             Invest in the Future with Confidence, <br />
             Transparency, and Assured Quality{" "}
           </p>
-          <button className="border rounded-sm border-black hover:border-black bg-black text-white py-2 px-3 sm:px-4 hover:bg-zinc-800 hover:text-white transition font-Lato text-xs sm:text-sm md:text-base">
+          <a
+            href="https://wa.me/7007828937" className="border rounded-sm border-black hover:border-black bg-black text-white py-2 px-3 sm:px-4 hover:bg-zinc-800 hover:text-white transition font-Lato text-xs sm:text-sm md:text-base">
             Talk to Us
-          </button>
+          </a>
         </div>
 
         {/* About Section */}
@@ -93,7 +94,7 @@ const Hero = () => {
           {/* Section Description */}
           <p className="mt-2 text-xs sm:text-sm md:text-base lg:text-2xl max-w-md sm:max-w-xl md:max-w-2xl !leading-snug sm:!leading-8 md:!leading-9 lg:!leading-9 mx-auto col-span-2 md:col-span-1 font-Lato font-[500] text-white">
             At 9 Arbor, we bring homebuyers/investors together to co-create
-            bespoke apartments and thriving communities that meet their unique
+            bespoke Real estate projects and thriving communities that meet their unique
             needs and aspirations.
           </p>
         </div>

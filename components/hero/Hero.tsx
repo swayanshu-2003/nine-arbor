@@ -30,10 +30,10 @@ const Hero = () => {
             We Empower Homebuyers to Co-Create Communities <br /> and
             Multi-Family Dream Homes
           </p>
-          <button className="border border-black hover:border-black bg-black text-white rounded-md py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-base">
-
+          <a
+            href="https://wa.me/7007828937" className="border border-black hover:border-black bg-black text-white rounded-md py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-base">
             Talk to Us
-          </button>
+          </a>
         </div>
 
         {/* About Section */}

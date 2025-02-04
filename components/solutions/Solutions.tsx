@@ -9,14 +9,14 @@ const cardItems = [
   {
     id: 1,
     category: "Transparent Pricing",
-    title: "Artificially Inflated Pricing",
+    title: "No Artificial Inflation of Price",
     description: "Cost + Margin pricing model, making it 20% more affordable.",
     image: Solution1, // Replace with actual image paths
   },
   {
     id: 2,
     category: "Buyer’s Protection",
-    title: "No Buyer Security",
+    title: "Investor/Buyer security upto 100%",
     description:
       "With our unique SPV structure, Buyers are secured by hard assets.",
     image: Solution2,
@@ -24,7 +24,7 @@ const cardItems = [
   {
     id: 3,
     category: "Quality",
-    title: "Unclear Quality Standards",
+    title: "Investment grade quality checks and standards",
     description:
       "Premium products with 400+ quality checks throughout the development lifecycle.",
     image: Solution3,
@@ -32,14 +32,14 @@ const cardItems = [
   {
     id: 4,
     category: "Resale/Rental",
-    title: "No Resale or Rental Support",
+    title: "Comprehensive resale or rental support",
     description: "Full support for resale and rental through trusted partners.",
     image: Solution4,
   },
   {
     id: 5,
     category: "Transparency & Reporting",
-    title: "Lack of Transparency in Project Progress",
+    title: "100% transparency on project progress",
     description: "End-to-end project visibility through tech-enabled tracking.",
     image: Solution5,
   },
@@ -47,34 +47,7 @@ const cardItems = [
 
 const Solutions = () => {
   return (
-
-    // <div className=" my-14  max-w-7xl mx-auto">
-    //   <div className="flex flex-col items-center ">
-    //     {cardItems.map((item: any, index: any) => (
-    //       <div
-    //         key={item?.id}
-    //         className={`flex ${
-    //           index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-    //         } bg-[#EFF1F2] w-full items-center justify-center`}
-    //       >
-    //         <div className="w-1/2 ">
-    //           <img src={item?.image?.src} alt="" />
-    //         </div>
-    //         <div className="p-12 w-1/2">
-    //           <p className="text-lg font-normal font-Montserrat text-[#707378]">
-    //             {item.category}
-    //           </p>
-    //           <h3 className="text-[44px] font-Inter font-bold text-black leading-[57px] mt-2">
-    //             {item.title}
-    //           </h3>
-    //           <p className="text-black font-Lato text-2xl font-normal mt-2">
-    //             {item.description}
-    //           </p>
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
+ 
 
     <div className="my-14 max-w-7xl mx-auto">
       <div className="flex flex-col items-center ">
