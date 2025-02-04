@@ -73,9 +73,12 @@ const FeaturesSection = () => {
           <div className="w-60 sm:w-72">
             <img src={Logo?.src} alt="Logo" className="w-full" />
           </div>
-          <button className="border border-white hover:border-black bg-black text-white rounded-sm py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-base">
+          <a
+            href="https://wa.me/7007828937"
+            className="border border-white hover:border-black bg-black text-white rounded-sm py-2 px-4 hover:bg-white hover:text-black transition font-Lato text-base"
+          >
             Talk to Us
-          </button>
+          </a>
         </div>
       </div>
     </div>
