@@ -73,6 +73,7 @@ const Solutions = () => {
                 {item.title}
               </h3>
               <p className="text-black font-Lato text-base lg:text-2xl font-normal mt-2">
+
                 {item.description}
               </p>
             </div>

@@ -5,7 +5,9 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+
 import VectorImg from "@/assets/unmatched/Vector.png";
+
 
 const accordionItems = [
   {
@@ -39,6 +41,7 @@ const accordionItems = [
 
 const UnmatchedSection = () => {
   return (
+
     // <div className="w-full bg-gray-100 ">
     //   <div className=" py-12 bg-gray-100 max-w-7xl mx-auto">
     //     <div className="flex items-start justify-between ">
@@ -88,10 +91,12 @@ const UnmatchedSection = () => {
               What makes <br />
               <span className="text-gray-600">our buildings</span>
               <br /> stand out
+
             </h2>
           </div>
 
           {/* Accordion Section */}
+
           <div className="w-full lg:w-4/6 px-4 lg:px-8">
             <Accordion type="single" collapsible className="space-y-4 w-full">
               {accordionItems.map((item) => (
@@ -100,6 +105,7 @@ const UnmatchedSection = () => {
                     {item.title}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600 font-Montserrat font-[500] text-base">
+
                     {item.content}
                   </AccordionContent>
                 </AccordionItem>
@@ -108,6 +114,7 @@ const UnmatchedSection = () => {
           </div>
         </div>
       </div>
+
       {/* Vector Image */}
       <div className="flex justify-center lg:justify-start">
         <img
@@ -116,6 +123,7 @@ const UnmatchedSection = () => {
           className="w-64 sm:w-80 md:w-[350px] lg:w-[450px] relative bottom-0 left-0 -mt-20 lg:-mt-40"
         />
       </div>
+
     </div>
   );
 };

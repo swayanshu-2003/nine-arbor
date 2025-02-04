@@ -61,6 +61,7 @@ const projectData = [
 ];
 
 const Projects = () => {
+
   return (
     <div className="my-20 w-full mx-auto" >
       <h2 id="projects" className="text-2xl md:text-[44px] my-10 font-Inter font-bold text-black text-center mt-12">
@@ -68,6 +69,7 @@ const Projects = () => {
       </h2>
       <div className="relative w-full mx-auto">
         <CustomCarousel projects={projectData} />
+
       </div>
     </div>
   );

@@ -189,6 +189,7 @@ const TeamSection: React.FC = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
